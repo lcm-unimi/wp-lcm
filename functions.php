@@ -122,6 +122,7 @@ function hemingway_sidebar_reg() {
 require_once (get_template_directory() . "/widgets/dribbble-widget.php");  
 require_once (get_template_directory() . "/widgets/flickr-widget.php");  
 require_once (get_template_directory() . "/widgets/video-widget.php");
+require_once (get_template_directory() . "/widgets/social-widget.php");
 
 
 // Set content-width
