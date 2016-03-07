@@ -297,6 +297,21 @@ font-size: 18px;
 text-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
 
+.fa-facebook:before {
+	content: "\f09a";
+}
+
+.fa-github:before {
+	content: "\f09b";
+}
+.fa-twitter:before {
+	content: "\f099";
+}
+.fa-google-plus:before {
+	content: "\f0d5";
+}
+
+
 .nav-toggle,
 .nav-toggle .bar,
 .blog-menu a,
