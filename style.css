@@ -2622,4 +2622,12 @@ img#wpstats { display: none; }
 	
 }
 
-  
+@font-face{
+	font-family: 'lcm-social-fonts';
+	src: url('fonts/fonts.eot');
+	src: url('fonts/fonts.eot?#iefix') format('embedded-opentype'), url('fonts/fonts.woff') format('woff'), url('fonts/fonts.ttf?') format('truetype'), url('fonts/fonts.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
