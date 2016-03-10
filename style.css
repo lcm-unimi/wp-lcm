@@ -297,6 +297,13 @@ font-size: 18px;
 text-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
 
+@font-face{
+	font-family: 'lcm-social-fonts';
+	src: url('fonts/fonts.eot');
+	src: url('fonts/fonts.eot?#iefix') format('embedded-opentype'), url('fonts/fonts.woff') format('woff'), url('fonts/fonts.ttf?') format('truetype'), url('fonts/fonts.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 .fa-facebook:before {
 	content: "\f09a";
 }
@@ -2621,13 +2628,4 @@ img#wpstats { display: none; }
 	
 	
 }
-
-@font-face{
-	font-family: 'lcm-social-fonts';
-	src: url('fonts/fonts.eot');
-	src: url('fonts/fonts.eot?#iefix') format('embedded-opentype'), url('fonts/fonts.woff') format('woff'), url('fonts/fonts.ttf?') format('truetype'), url('fonts/fonts.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 
