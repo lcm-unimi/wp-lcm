@@ -29,13 +29,13 @@ class LCM_Social_Media_Widget extends WP_Widget{
 		if(!empty($instance['title'])) {
 			echo $args['before_title'].$instance['title'].$args['after_title'];
 		}
-
 		foreach($this->networks as $id => $name) {
 			if(!empty($instance[$id])) {
 				?><a class="social-media-icon social-media-icon-<?php echo $id ?> social-media-icon-<?php echo esc_attr($instance['size']) ?>" href="<?php echo esc_url( $instance[$id], array('http', 'https', 'mailto', 'skype') ) ?>" title="<?php echo esc_html( get_bloginfo('name') . ' ' . $name ) ?>" <?php if(!empty($instance['new_window'])) echo 'target="_blank"'; ?>><?php
 
 				$icon = apply_filters('social_widget_icon_'.$id, '');
 				if(!empty($icon)) echo $icon;
+
 				else echo '<span class="fa fa-' . $id . '"></span>';
 
 				?></a><?php
