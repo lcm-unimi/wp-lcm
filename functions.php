@@ -61,6 +61,7 @@ function hemingway_load_style() {
 	if ( !is_admin() ) {
 	    wp_enqueue_style( 'hemingway_googleFonts', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Raleway:700,400' );
 	    wp_enqueue_style( 'hemingway_style', get_stylesheet_uri() );
+	    wp_enqueue_style( 'LCM_social_fonts', get_styleLCM_uri() );
 	}
 }
 
@@ -451,5 +452,14 @@ add_action( 'wp_head' , array( 'Hemingway_Customize' , 'header_output' ) );
 
 // Enqueue live preview javascript in Theme Customizer admin screen
 add_action( 'customize_preview_init' , array( 'Hemingway_Customize' , 'live_preview' ) );
+
+
+function get_styleLCM_uri() {
+        $stylesheet_dir_uri = get_stylesheet_directory_uri();
+        $stylesheet_uri = $stylesheet_dir_uri . '/fontawesome/css/font-awesome.css?ver=4.2.0';
+        return apply_filters( 'stylesheet_uri', $stylesheet_uri, $stylesheet_dir_uri );
+}
+
+
 
 ?>
