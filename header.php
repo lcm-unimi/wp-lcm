@@ -7,7 +7,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 																		
-		<title><?php wp_title('|', true, 'right'); ?></title>
+		<title><?php wp_title('|', true, 'right'); bloginfo('name'); echo " | "; bloginfo('description'); ?></title>
 				
 		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 		 
